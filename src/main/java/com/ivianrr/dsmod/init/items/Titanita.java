@@ -16,7 +16,7 @@ public class Titanita extends Item
 	{
 		setRegistryName(name);
 		setUnlocalizedName(getRegistryName().toString());
-		setCreativeTab(CreativeTabs.BREWING);
+		setCreativeTab(CreativeTabs.MATERIALS);
 	}
 	
 	@SideOnly(Side.CLIENT)
