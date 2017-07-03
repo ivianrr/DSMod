@@ -1,6 +1,6 @@
 package com.ivianrr.dsmod.proxy;
 
-import com.ivianrr.dsmod.init.items.ModItems;
+import com.ivianrr.dsmod.items.ModItems;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
 import net.minecraftforge.fml.common.Mod;

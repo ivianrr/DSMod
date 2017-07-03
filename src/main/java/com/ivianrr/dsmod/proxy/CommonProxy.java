@@ -1,8 +1,7 @@
 package com.ivianrr.dsmod.proxy;
 
-import com.ivianrr.dsmod.init.blocks.TitaniteBlock;
-import com.ivianrr.dsmod.init.blocks.ModBlocks;
-import com.ivianrr.dsmod.init.items.Titanita;
+import com.ivianrr.dsmod.blocks.ModBlocks;
+import com.ivianrr.dsmod.blocks.TitaniteBlock;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -15,7 +14,8 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
-import com.ivianrr.dsmod.init.items.ModItems;
+import com.ivianrr.dsmod.items.ModItems;
+import com.ivianrr.dsmod.items.Titanita;
 
 @Mod.EventBusSubscriber
 public class CommonProxy 

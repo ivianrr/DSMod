@@ -1,4 +1,4 @@
-package com.ivianrr.dsmod.init.blocks;
+package com.ivianrr.dsmod.blocks;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;

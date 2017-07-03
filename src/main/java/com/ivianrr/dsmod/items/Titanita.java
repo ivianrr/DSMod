@@ -1,4 +1,4 @@
-package com.ivianrr.dsmod.init.items;
+package com.ivianrr.dsmod.items;
 
 import com.ivianrr.dsmod.main.DSMod;
 import com.ivianrr.dsmod.main.Reference;
