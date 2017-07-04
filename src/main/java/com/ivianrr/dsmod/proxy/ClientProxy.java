@@ -1,5 +1,6 @@
 package com.ivianrr.dsmod.proxy;
 
+import com.ivianrr.dsmod.blocks.ModBlocks;
 import com.ivianrr.dsmod.items.ModItems;
 
 import net.minecraftforge.client.event.ModelRegistryEvent;
@@ -30,11 +31,13 @@ public class ClientProxy extends CommonProxy
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		super.postInit(event);
+		ModBlocks.initItemModels();//vacio
 
 	}
 	@SubscribeEvent
 	public static void registerModels(ModelRegistryEvent event) 
 	{
+        ModBlocks.initModels();
 		ModItems.initModels();
 	}
 }

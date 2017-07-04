@@ -12,9 +12,19 @@ public class ModBlocks {
 	@GameRegistry.ObjectHolder("titaniteblock")
     public static TitaniteBlock titaniteBlock = new TitaniteBlock("titaniteblock");
 
+	 @SideOnly(Side.CLIENT)
+	 public static void initModels() {
+		 titaniteBlock.initModel();
+	 }
 	
-	
-	
+	 
+	 
+	 //Only for bakedmodels
+	 @SideOnly(Side.CLIENT)
+	 public static void initItemModels() {
+		 
+	 }
+	 
 	/*
 	@GameRegistry.ObjectHolder("titanitanormal")
 	public static Titanita titanitaNormal;
