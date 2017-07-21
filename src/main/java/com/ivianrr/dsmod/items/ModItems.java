@@ -5,10 +5,10 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-@GameRegistry.ObjectHolder("dsmod")
+
 public class ModItems 
 {
-	@GameRegistry.ObjectHolder("titanitanormal")
+	@GameRegistry.ObjectHolder("dsmod:titanitanormal")
 	public static Titanita titanitaNormal;
 	
 	public static void init() {
