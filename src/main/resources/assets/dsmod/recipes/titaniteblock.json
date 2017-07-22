@@ -1,0 +1,16 @@
+{
+  "result": {
+    "item": "dsmod:titaniteblock"
+  },
+  "pattern": [
+    "ttt",
+    "ttt",
+    "ttt"
+  ],
+  "type": "forge:ore_shaped",
+  "key": {
+    "t": {
+      "item": "dsmod:titanitanormal"
+    }
+  }
+}
