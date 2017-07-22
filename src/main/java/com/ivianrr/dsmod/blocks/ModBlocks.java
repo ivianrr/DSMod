@@ -1,5 +1,6 @@
 package com.ivianrr.dsmod.blocks;
 
+import com.ivianrr.dsmod.blocks.blinkingblock.BlinkingBlock;
 import com.ivianrr.dsmod.blocks.datablock.DataBlock;
 import com.ivianrr.dsmod.items.Titanita;
 
@@ -15,10 +16,14 @@ public class ModBlocks {
 	
 	@GameRegistry.ObjectHolder("dsmod:datablock")
     public static DataBlock dataBlock;
+	
+	@GameRegistry.ObjectHolder("dsmod:blinkingblock")
+    public static BlinkingBlock blinkingBlock;
 
 	public static void init() {
 		titaniteBlock = new TitaniteBlock("titaniteblock");
 		dataBlock = new DataBlock();
+		blinkingBlock = new BlinkingBlock();
     }
 	
 	
@@ -27,6 +32,7 @@ public class ModBlocks {
 	 public static void initModels() {
 		 titaniteBlock.initModel();
 		 dataBlock.initModel();
+		 blinkingBlock.initModel();
 	 }
 	
 

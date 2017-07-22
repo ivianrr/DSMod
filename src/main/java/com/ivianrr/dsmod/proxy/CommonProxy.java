@@ -2,6 +2,7 @@ package com.ivianrr.dsmod.proxy;
 
 import com.ivianrr.dsmod.blocks.ModBlocks;
 import com.ivianrr.dsmod.blocks.TitaniteBlock;
+import com.ivianrr.dsmod.blocks.blinkingblock.BlinkingTileEntity;
 import com.ivianrr.dsmod.blocks.datablock.DataTileEntity;
 
 import net.minecraft.block.Block;
@@ -45,8 +46,10 @@ public class CommonProxy
     {
         e.getRegistry().register(ModBlocks.titaniteBlock);
         e.getRegistry().register(ModBlocks.dataBlock);
+        e.getRegistry().register(ModBlocks.blinkingBlock);
         
         GameRegistry.registerTileEntity(DataTileEntity.class, Reference.MODID + "_datablock");
+        GameRegistry.registerTileEntity(BlinkingTileEntity.class, Reference.MODID + "_blinkingblock");
     }
     
 	@SubscribeEvent
@@ -56,6 +59,8 @@ public class CommonProxy
     	
     	e.getRegistry().register(new ItemBlock(ModBlocks.titaniteBlock).setRegistryName(ModBlocks.titaniteBlock.getRegistryName()));
     	e.getRegistry().register(new ItemBlock(ModBlocks.dataBlock).setRegistryName(ModBlocks.dataBlock.getRegistryName()));
+    	e.getRegistry().register(new ItemBlock(ModBlocks.blinkingBlock).setRegistryName(ModBlocks.blinkingBlock.getRegistryName()));
+
     }
 
 }

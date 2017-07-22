@@ -2,4 +2,6 @@ item.dsmod:titanitanormal.name=Titanite
 
 tile.dsmod:titaniteblock.name=Titanite Block
 tile.dsmod:datablock.name=Data Block
+tile.dsmod:blinkingblock.name=Blinking Block
+
 message.dsmod.counter_par=Counter: %d
