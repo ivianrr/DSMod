@@ -1,0 +1,7 @@
+item.dsmod:titanitanormal.name=Titanita
+
+tile.dsmod:titaniteblock.name=Bloque de Titanita
+tile.dsmod:datablock.name=Contador
+tile.dsmod:blinkingblock.name=Bloque brillante
+
+message.dsmod.counter_par=Contador: %d

@@ -4,6 +4,7 @@ import com.ivianrr.dsmod.blocks.ModBlocks;
 import com.ivianrr.dsmod.blocks.TitaniteBlock;
 import com.ivianrr.dsmod.blocks.blinkingblock.BlinkingTileEntity;
 import com.ivianrr.dsmod.blocks.datablock.DataTileEntity;
+import com.ivianrr.dsmod.blocks.testcontainer.TestContainerTileEntity;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -47,9 +48,11 @@ public class CommonProxy
         e.getRegistry().register(ModBlocks.titaniteBlock);
         e.getRegistry().register(ModBlocks.dataBlock);
         e.getRegistry().register(ModBlocks.blinkingBlock);
+        e.getRegistry().register(ModBlocks.testContainerBlock);
         
         GameRegistry.registerTileEntity(DataTileEntity.class, Reference.MODID + "_datablock");
         GameRegistry.registerTileEntity(BlinkingTileEntity.class, Reference.MODID + "_blinkingblock");
+        GameRegistry.registerTileEntity(TestContainerTileEntity.class, Reference.MODID + "_testcontainerblock");
     }
     
 	@SubscribeEvent
@@ -60,7 +63,7 @@ public class CommonProxy
     	e.getRegistry().register(new ItemBlock(ModBlocks.titaniteBlock).setRegistryName(ModBlocks.titaniteBlock.getRegistryName()));
     	e.getRegistry().register(new ItemBlock(ModBlocks.dataBlock).setRegistryName(ModBlocks.dataBlock.getRegistryName()));
     	e.getRegistry().register(new ItemBlock(ModBlocks.blinkingBlock).setRegistryName(ModBlocks.blinkingBlock.getRegistryName()));
-
+    	e.getRegistry().register(new ItemBlock(ModBlocks.testContainerBlock).setRegistryName(ModBlocks.testContainerBlock.getRegistryName()));
     }
 
 }

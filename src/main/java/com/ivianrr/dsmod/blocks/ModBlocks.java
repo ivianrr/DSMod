@@ -2,6 +2,7 @@ package com.ivianrr.dsmod.blocks;
 
 import com.ivianrr.dsmod.blocks.blinkingblock.BlinkingBlock;
 import com.ivianrr.dsmod.blocks.datablock.DataBlock;
+import com.ivianrr.dsmod.blocks.testcontainer.TestContainerBlock;
 import com.ivianrr.dsmod.items.Titanita;
 
 import net.minecraftforge.fml.common.registry.GameRegistry;
@@ -20,10 +21,14 @@ public class ModBlocks {
 	@GameRegistry.ObjectHolder("dsmod:blinkingblock")
     public static BlinkingBlock blinkingBlock;
 
+	@GameRegistry.ObjectHolder("dsmod:testcontainerblock")
+    public static TestContainerBlock testContainerBlock;
+	
 	public static void init() {
 		titaniteBlock = new TitaniteBlock("titaniteblock");
 		dataBlock = new DataBlock();
 		blinkingBlock = new BlinkingBlock();
+		testContainerBlock = new TestContainerBlock();
     }
 	
 	
@@ -33,6 +38,7 @@ public class ModBlocks {
 		 titaniteBlock.initModel();
 		 dataBlock.initModel();
 		 blinkingBlock.initModel();
+		 testContainerBlock.initModel();
 	 }
 	
 

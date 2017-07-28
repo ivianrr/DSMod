@@ -20,7 +20,7 @@ public class DSMod
 	public static CommonProxy proxy;
 	
 	@Mod.Instance(Reference.MODID)
-	public DSMod instance;
+	public static DSMod instance;
 	
 	public static Logger logger;
 	
