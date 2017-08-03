@@ -15,10 +15,12 @@ import net.minecraftforge.fml.common.event.FMLInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.common.network.NetworkRegistry;
 import net.minecraftforge.fml.common.registry.GameRegistry;
 
 import com.ivianrr.dsmod.items.ModItems;
 import com.ivianrr.dsmod.items.Titanita;
+import com.ivianrr.dsmod.main.DSMod;
 import com.ivianrr.dsmod.main.Reference;
 
 @Mod.EventBusSubscriber
@@ -34,14 +36,14 @@ public class CommonProxy
 	
 	public void Init(FMLInitializationEvent event)
 	{
-		
+		NetworkRegistry.INSTANCE.registerGuiHandler(DSMod.instance, new GuiProxy());
 	}
 
 	public void postInit(FMLPostInitializationEvent event)
 	{
 		
 	}
-    
+	
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> e) 
     {

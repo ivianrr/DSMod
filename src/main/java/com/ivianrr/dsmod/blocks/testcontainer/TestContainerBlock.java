@@ -8,6 +8,7 @@ import net.minecraft.block.ITileEntityProvider;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.state.IBlockState;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -26,8 +27,9 @@ public class TestContainerBlock extends Block implements ITileEntityProvider {
 
     public TestContainerBlock() {
         super(Material.ROCK);
-        setUnlocalizedName(Reference.MODID + ".testcontainerblock");
         setRegistryName("testcontainerblock");
+		setUnlocalizedName(getRegistryName().toString());
+		setCreativeTab(CreativeTabs.MATERIALS);
     }
 
     @SideOnly(Side.CLIENT)
